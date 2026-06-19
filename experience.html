@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>經歷 - 勝翔</title>
+
+<style>
+/* --- 基礎設定 --- */
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background: #0e1117;
+    color: white;
+    display: flex;
+    flex-direction: column; /* 手機版：預設垂直堆疊 */
+}
+
+/* --- 導覽列 RWD --- */
+.sidebar {
+    width: 100%;
+    background: #111827;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1f2937;
+}
+
+/* 關鍵：手機版連結橫向排列的容器 */
+.nav-links {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 8px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #1f2937;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #374151;
+}
+
+.sidebar a.active {
+    background-color: #1f2937;
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+/* --- 主內容 --- */
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- 桌機版佈局 (螢幕寬度 > 768px) --- */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row; /* 桌機：左右排列 */
+    }
+
+    .sidebar {
+        width: 220px;
+        height: 100vh;
+        position: fixed;
+        padding: 40px 20px;
+        border-bottom: none;
+        border-right: 1px solid #1f2937;
+    }
+
+    .nav-links {
+        display: block; /* 桌機：恢復垂直排列 */
+    }
+
+    .sidebar a {
+        display: block;
+        margin: 10px 0;
+        background: transparent;
+        font-size: 16px;
+    }
+
+    .content {
+        margin-left: 240px; /* 留出左側導覽空間 */
+        padding: 40px;
+        max-width: 900px;
+    }
+}
+
+/* --- 元件樣式 --- */
+.card { 
+    background: #161b22; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-top: 15px; 
+    border: 1px solid #30363d; 
+    line-height: 1.6;
+}
+b { color: #58a6ff; font-size: 1.1rem; }
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="nav-links">
+        <a href="index.html">個人介紹</a>
+        <a href="experience.html" class="active">經歷</a>
+        <a href="skills.html">技能</a>
+        <a href="education.html">學歷</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1>經歷</h1>
+
+ <div class="card">
+        <b>總年資｜約 19~20 年軟體與工程經驗</b><br>
+        嵌入式系統 / 韌體 / 遊戲開發 / Unity / AI資料應用<br>
+        <span style="color: #8b949e; font-size: 0.9rem;">
+            跨領域軟體工程與團隊管理經驗
+        </span>
+    </div>
+
+    <div class="card">
+        <b>凌發科技｜Unity 主任 / 組長</b><br>
+        2020/05 ~ 2025/07（5年3個月）<br>
+        團隊規模 5~8 人<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • Unity APP（C#）開發與架構設計<br>
+        • 團隊任務分配與進度管理<br>
+        • 技術文件撰寫與 Code Review<br>
+        • 專案效能優化與品質控管<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>網銀國際｜Unity 遊戲開發組長</b><br>
+        2012/04 ~ 2020/04（8年1個月）<br>
+        手遊 / Client 端開發<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • Unity3D 遊戲 Client 開發<br>
+        • 與企劃 / 美術 / Server 協作開發產品<br>
+        • App Store 上架與版本維護<br>
+        • 遊戲框架優化與效能調整<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>海德威電子｜韌體 / SoC 工程師</b><br>
+        2011/01 ~ 2012/01<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • ARM 嵌入式系統開發<br>
+        • uC/OS-II RTOS 開發<br>
+        • 2.4G RF Baby Monitor 專案（獨立完成）<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>博敦電子｜遊戲軟體工程師</b><br>
+        2008/12 ~ 2010/10<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • 遊戲系統（水果盤 / 骰寶）開發<br>
+        • 遊戲邏輯與主機端系統設計<br>
+        • 參與遊戲架構規劃與開發<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>鼎威研發｜FAE / 應用工程師</b><br>
+        2007/06 ~ 2008/08<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • 產品測試與量產驗證<br>
+        • PCB 焊接與測試<br>
+        • 8051 程式開發<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>奇美電子｜設備助理工程師</b><br>
+        2006/05 ~ 2007/06<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • LCD 產線設備異常處理（On-call）<br>
+        • 生產線即時問題排除<br>
+        </span>
+    </div>
+
+    <div class="card">
+        <b>立禾機電｜工業配線員</b><br>
+        1999/09 ~ 2000/10<br><br>
+
+        <span style="color: #8b949e; font-size: 0.9rem;">
+        • 高壓配電盤與線路配線施工<br>
+        </span>
+    </div>
+</div>
+
+</body>
+</html>

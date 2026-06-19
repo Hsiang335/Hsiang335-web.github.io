@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人介紹 - 勝翔 (Seant Shing)</title>
+
+<style>
+/* --- 基礎設定 --- */
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background: #0e1117;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 導覽列 --- */
+.sidebar {
+    width: 100%;
+    background: #111827;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1f2937;
+}
+
+.nav-links {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 8px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #1f2937;
+    font-size: 14px;
+}
+
+/* --- 主內容 --- */
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+    margin-bottom: 15px;
+}
+
+/* --- 元件樣式 --- */
+hr { border: 0; border-top: 1px solid #333; margin: 30px 0; }
+.card { 
+    background: #161b22; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-top: 15px; 
+    border: 1px solid #30363d; 
+    line-height: 1.7;
+}
+.tag { 
+    display: inline-block; 
+    background: #238636; 
+    color: white;
+    padding: 4px 10px; 
+    margin: 2px; 
+    border-radius: 4px; 
+    font-size: 12px; 
+}
+
+/* 連結按鈕樣式 */
+.btn-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: #1f2937;
+    color: #58a6ff;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn-link:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+}
+
+.sidebar a.active {
+    background-color: #1f2937;
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.highlight { color: #58a6ff; font-weight: bold; }
+.exp-title { color: #58a6ff; font-size: 1.2rem; margin-bottom: 5px; display: block; }
+.exp-meta { color: #8b949e; font-size: 0.9rem; margin-bottom: 10px; display: block; }
+
+/* 專題圖片樣式 */
+.project-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-image {
+    max-width: 500px; 
+    width: 100%;       
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 2px solid #30363d;
+}
+
+/* --- 桌機版佈局 --- */
+@media (min-width: 768px) {
+    body { flex-direction: row; }
+    .sidebar { width: 220px; height: 100vh; position: fixed; padding: 40px 20px; border-right: 1px solid #1f2937; }
+    .nav-links { display: block; }
+    .sidebar a { display: block; margin: 10px 0; background: transparent; font-size: 16px; }
+    .content { margin-left: 240px; padding: 40px; max-width: 1000px; }
+    .header-flex { flex-direction: row; text-align: left; }
+    .profile { width: 180px; margin-right: 30px; margin-bottom: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="nav-links">
+        <a href="index.html" class="active">個人介紹</a>
+        <a href="experience.html">經歷</a>
+        <a href="skills.html">技能</a>
+        <a href="education.html">學歷</a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="header-flex">
+        <img src="assets/p1.jpg" class="profile" alt="勝翔">
+        <div>
+            <h1 style="margin:0;">勝翔 (CHENG SHIANG)</h1>
+            <p style="font-size: 1.2rem; color: #8b949e;">資料工程師 | AI 數據分析 | Unity遊戲開發主任</p>
+            <p>現居台中市<a href="https://chengshiang335-web.github.io/" target="_blank">技術技能樹</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>關於我</h2>
+    <p>您好，我是勝翔，目前定居台中，具備電機工程背景，職涯歷經設備工程、韌體開發至軟體工程師，累積約20年跨領域實務經驗，涵蓋嵌入式系統、遊戲開發與Unity應用開發等領域。
+
+過去曾負責團隊管理與專案開發，具備從系統架構設計到產品落地的完整開發經驗，並長期參與跨部門協作與技術整合工作。
+
+因公司組織調整而離職後，於2026年初開始系統性進修後端開發與資料工程相關技術，積極投入AI與數據分析領域轉型，期望往數據工程師與資料分析師方向發展，結合過往軟體開發經驗，延伸資料驅動應用的價值</p>
+
+    <hr>
+
+    <h2>工作經歷</h2>
+    <div class="card">
+        <span class="exp-title">凌發科技 ｜ Unity 主任 / 組長</span>
+        <span class="exp-meta">2020/05 ~ 2025/07</span>
+        <p>主導 Unity3D 遊戲平台開發，導入 Addressable Bundle 技術架構，負責元宇宙與直播系統開發。</p>
+    </div>
+
+    <div class="card">
+        <span class="exp-title">網銀國際 ｜ 資深組長 / 軟體工程師</span>
+        <span class="exp-meta">2012/04 ~ 2020/04</span>
+        <p>擔任《永世2014、世界大亨》Client 端主程，負責雙平台發佈、框架維護與效能優化，曾獲技術研發久任獎金。</p>
+    </div>
+
+    <hr>
+
+    <div class="card" style="border-left: 5px solid #238636;">
+        <h3 style="margin-top:0;">目前動態</h3>
+        <p>於職訓局進修4個月 <span class="highlight">【Python人工智慧與數據分析班】</span>，2026/04/23 結業。掌握技術包含 Python 爬蟲、SQL Server ETL、SSAS/SSRS 及 Power BI 資料分析。</p>
+        <a href="https://docs.google.com/presentation/d/1OiA0Z-Uvltr_wH0KO7GO_jBWVU2DYPwfVBk3Xd34cnE/edit?usp=sharing" target="_blank" class="btn-link">查看專案簡報 (PPT)</a>
+    </div>
+
+    <hr>
+
+    <h2>利用空閒之餘開發專案 (做中學成果)</h2>
+    
+
+    <div class="card">
+        <h3>1. FastAPI 後端分層架構與驗證系統 (FastAPITest)</h3>
+        <p>為了掌握現代後端架構與測試思維，我建立了一個 FastAPI 後端開發與練習專案：</p>
+        <ul>
+            <li><b>架構分層設計：</b>實作 <span class="highlight">Router ➔ Service ➔ Repository ➔ Database</span> 分層，降低耦合度，提升系統可維護性。</li>
+            <li><b>安全驗證機制：</b>使用 <span class="highlight">JWT (JSON Web Token)</span> 進行登入認證，並透過 <span class="highlight">bcrypt</span> 雜湊演算法保護使用者密碼。</li>
+            <li><b>測試與環境配置：</b>使用 <span class="highlight">pytest</span> 撰寫單元測試，並運用相依性注入 (DI) 抽換為 <span class="highlight">FakeRepository</span>，實現輕量且獨立的測試環境。</li>
+            <li><b>資料庫與容器化：</b>以 <span class="highlight">SQLAlchemy ORM</span> 進行資料存取，支援文件 CRUD（新增、查詢、部分更新、刪除）操作，並使用 <span class="highlight">Docker-Compose</span> 整合 PostgreSQL 資料庫服務。</li>
+        </ul>
+        <div>
+            <span class="tag" style="background-color: #009688;">FastAPI</span>
+            <span class="tag" style="background-color: #3f51b5;">SQLAlchemy</span>
+            <span class="tag" style="background-color: #9c27b0;">JWT 驗證</span>
+            <span class="tag" style="background-color: #336791;">PostgreSQL</span>
+            <span class="tag" style="background-color: #2496ed;">Docker</span>
+            <span class="tag" style="background-color: #0c9b16;">pytest</span>
+        </div>
+        <div style="margin-top: 15px;">
+            <a href="https://github.com/Hsiang335/FastAPITest.git" target="_blank" class="btn-link">查看 GitHub 專案</a>
+            <a href="https://youtu.be/K3fE7Kp4ziY" target="_blank" class="btn-link">在 YouTube 觀看影片</a>
+        </div>
+        
+        <div class="project-image-container" style="margin-top: 20px;">
+            <p style="color: #8b949e; font-size: 0.9rem; margin-bottom: 10px;">【實測成果】FastAPI 專案架構與 API 演示影片</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>2. 美國總統動態即時監控系統 (BI + AI 整合)</h3>
+        <p>為了掌握即時趨勢消息，我建立了一個全自動化的數據處理流程：</p>
+        <ul>
+            <li>使用 <span class="highlight">Python</span> 自動爬取新聞並寫入 <span class="highlight">Azure SQL Database</span>。</li>
+            <li>進行 <span class="highlight">NLP 情感分析</span> 並透過 <span class="highlight">LINE Notify</span> 即時推播。</li>
+        </ul>
+        
+        <div class="project-image-container">
+            <p style="color: #8b949e; font-size: 0.9rem; margin-bottom: 5px;">【實測成果】LINE 群組接收與智慧手錶同步推播</p>
+            <img src="assets/line1.jpg" class="project-image" alt="成果展示">
+        </div>
+    </div>
+
+
+    <hr>
+
+    <h2>職涯理念</h2>
+    <blockquote style="font-style: italic; color: #8b949e; border-left: 4px solid #30363d; padding-left: 20px;">
+        「在每個階段都是特別的經歷，從上手熟悉到化繁為簡隨時充滿挑戰。我期待在數據分析領域創造下一個價值。」
+    </blockquote>
+
+</div>
+
+</body>
+</html>

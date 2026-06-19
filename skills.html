@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>專業技能 - 勝翔</title>
+
+<style>
+/* --- 基礎設定 --- */
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background: #0e1117;
+    color: white;
+    display: flex;
+    flex-direction: column; /* 手機版：垂直堆疊 */
+}
+
+/* --- 導覽列 RWD --- */
+.sidebar {
+    width: 100%;
+    background: #111827;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1f2937;
+}
+
+.nav-links {
+    display: flex; /* 手機版：橫向排列 */
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 8px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #1f2937;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #374151;
+}
+
+.sidebar a.active {
+    background-color: #1f2937;
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+/* --- 主內容 --- */
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- 桌機版佈局 (螢幕寬度 > 768px) --- */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row; /* 桌機：左右排列 */
+    }
+
+    .sidebar {
+        width: 220px;
+        height: 100vh;
+        position: fixed;
+        padding: 40px 20px;
+        border-bottom: none;
+        border-right: 1px solid #1f2937;
+    }
+
+    .nav-links {
+        display: block; /* 桌機：垂直排列 */
+    }
+
+    .sidebar a {
+        display: block;
+        margin: 10px 0;
+        background: transparent;
+        font-size: 16px;
+    }
+
+    .content {
+        margin-left: 240px; 
+        padding: 40px;
+        max-width: 900px;
+    }
+}
+
+/* --- 技能專用樣式 --- */
+.skill-group {
+    margin-bottom: 30px;
+}
+.skill-title {
+    color: #58a6ff;
+    border-left: 4px solid #58a6ff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.tag { 
+    display: inline-block; 
+    background: #1f2937; 
+    padding: 8px 14px; 
+    margin: 5px; 
+    border-radius: 6px; 
+    font-size: 14px; 
+    border: 1px solid #30363d;
+}
+.card { 
+    background: #161b22; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 1px solid #30363d; 
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="nav-links">
+        <a href="index.html">個人介紹</a>
+        <a href="experience.html">經歷</a>
+        <a href="skills.html" class="active">技能</a>
+        <a href="education.html">學歷</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1>專業技能</h1>
+
+<div class="card">
+
+    <div class="skill-group">
+        <h3 class="skill-title">資料工程 / 後端開發 (Data Engineering & Backend)</h3>
+        <span class="tag">Python (爬蟲 / 自動化 / ETL)</span>
+        <span class="tag">FastAPI (REST API / JWT / SQLAlchemy)</span>
+        <span class="tag">SQL / Azure SQL Database</span>
+        <span class="tag">Docker (基礎容器化)</span>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="skill-title">資料分析與商業智慧 (Data Analytics & BI)</h3>
+        <span class="tag">Power BI (DAX / Data Modeling)</span>
+        <span class="tag">SSAS (OLAP 多維分析)</span>
+        <span class="tag">SSRS (報表設計)</span>
+        <span class="tag">資料視覺化與儀表板設計</span>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="skill-title">軟體開發與系統架構 (Software Development)</h3>
+        <span class="tag">C# / .NET 基礎架構概念</span>
+        <span class="tag">Unity3D（遊戲 Client 開發）</span>
+        <span class="tag">RESTful API 設計概念</span>
+        <span class="tag">Git 版本控制</span>
+    </div>
+
+    <div class="skill-group" style="margin-bottom: 0;">
+        <h3 class="skill-title">嵌入式與工程背景 (Embedded & Engineering)</h3>
+        <span class="tag">C 語言</span>
+        <span class="tag">ARM / RTOS (uC/OS-II)</span>
+        <span class="tag">嵌入式系統開發</span>
+        <span class="tag">電子測試 / 示波器 / 邏輯分析儀</span>
+    </div>
+
+</div>
+
+</body>
+</html>
